@@ -1,0 +1,62 @@
+/* estilo.css - estilos específicos para Clínica Vet */
+
+/* Espaciado general */
+body {
+    background: #fafafa;
+    color: #222;
+}
+
+/* Header */
+header .navbar-brand svg {
+    transform: translateY(2px);
+    fill: #fff;
+}
+
+/* Carousel captions semi-transparente para legibilidad */
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.45);
+    padding: .6rem 1rem;
+    border-radius: 6px;
+}
+
+/* Tarjetas */
+.card {
+    border: 0;
+}
+
+/* Efecto hover para tarjetas de servicio */
+.service-card:hover {
+    transform: translateY(-6px) scale(1.02);
+    box-shadow: 0 14px 30px rgba(0,0,0,0.12);
+    cursor: pointer;
+}
+
+/* Iconos en tarjetas */
+.service-card .fa-solid {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+}
+
+/* Formulario: sombra y bordes suaves */
+#contactForm {
+    border-radius: 8px;
+    background: #fff;
+}
+
+/* Botones */
+.btn-success {
+    background: #198754;
+    border-color: #198754;
+}
+
+/* Footer */
+footer {
+    border-top: 1px solid rgba(0,0,0,0.06);
+}
+
+/* Ajustes responsivos menores */
+@media (max-width: 767px) {
+    .carousel-caption { font-size: .9rem; bottom: .5rem; left: .5rem; right: .5rem; }
+}

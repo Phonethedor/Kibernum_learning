@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta author="Alvaro Castillo">
+        <title>Portafolio — Álvaro Castillo</title>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="contenedor">
+            <header class="encabezado">
+                <div class="brand">
+                    <h1>Álvaro Castillo</h1>
+                    <p class="tagline">Desarrollador Frontend • Interfaces accesibles</p>
+                </div>
+                <nav class="navegacion" aria-label="Menú principal">
+                    <ul>
+                        <li><a href="#about">Sobre mí</a></li>
+                        <li><a href="#projects">Proyectos</a></li>
+                        <li><a href="#skills">Habilidades</a></li>
+                        <li><a href="#contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <main class="principal">
+                <section id="about" class="card hero" aria-labelledby="about-title">
+                    <figure class="hero-figure">
+                        <img src="assets/img/1.jpg" alt="Foto de Alvaro">
+                        <figcaption class="sr-only">Foto de Alvaro</figcaption>
+                    </figure>
+                    <div class="hero-text">
+                        <h2 id="about-title">Hola, soy Alvaro</h2>
+                        <p>
+                            Soy desarrollador frontend con interés en crear interfaces limpias,
+                            accesibles y responsivas. Trabajo con HTML, CSS moderno y JavaScript,
+                            y he construido SPAs y landings optimizadas para rendimiento.
+                        </p>
+                        <p class="tagline" style="margin-top:8px;">Disponible para proyectos y colaboraciones.</p>
+                    </div>
+                </section>
+                <section id="projects" class="card" aria-labelledby="projects-title">
+                    <h3 id="projects-title">Proyectos destacados</h3>
+                    <article class="card" aria-labelledby="p1-title">
+                        <figure class="hero-figure">
+                            <img src="assets/img/2.png" alt="Dashboard Analytics">
+                            <figcaption class="sr-only">Dashboard Analytics</figcaption>
+                        </figure>
+                        <div class="hero-text">
+                            <h4 id="p1-title">Dashboard Analytics</h4>
+                            <p>SPA de visualización de datos con filtros y gráficos interactivos.</p>
+                            <p class="tagline">Tecnologías: React • Chart.js • API Rest</p>
+                        </div>
+                    </article>
+                    <article class="card" aria-labelledby="p2-title">
+                        <figure class="hero-figure">
+                            <img src="assets/img/3.jpg" alt="Landing Corporativa">
+                            <figcaption class="sr-only">Landing Corporativa</figcaption>
+                        </figure>
+                        <div class="hero-text">
+                            <h4 id="p2-title">Landing Corporativa</h4>
+                            <p>Landing responsiva optimizada para conversión y accesibilidad.</p>
+                            <p class="tagline">Tecnologías: HTML • CSS • SEO • WCAG</p>
+                        </div>
+                    </article>
+                    <article class="card" aria-labelledby="p3-title">
+                        <figure class="hero-figure">
+                            <img src="assets/img/4.jpg" alt="App de Tareas">
+                            <figcaption class="sr-only">App de Tareas</figcaption>
+                        </figure>
+                        <div class="hero-text">
+                            <h4 id="p3-title">App de Tareas (PWA)</h4>
+                            <p>PWA para gestión de tareas con sincronización offline y notificaciones.</p>
+                            <p class="tagline">Tecnologías: PWA • IndexedDB • Vanilla JS</p>
+                        </div>
+                    </article>
+                </section>
+                <section id="skills" class="card" aria-labelledby="skills-title">
+                    <h3 id="skills-title">Habilidades</h3>
+                    <ul class="lista" role="list">
+                        <li class="elemento">HTML</li>
+                        <li class="elemento">CSS</li>
+                        <li class="elemento">JavaScript</li>
+                        <li class="elemento">Vue.js</li>
+                        <li class="elemento">Accesibilidad</li>
+                        <li class="elemento">Responsive</li>
+                    </ul>
+                </section>
+                <section id="contact" class="card" aria-labelledby="contact-title">
+                    <h3 id="contact-title">Contacto</h3>
+                    <p class="tagline">¿Interesado en trabajar juntos? Escríbeme.</p>
+                    <nav aria-label="Enlaces de contacto">
+                        <ul class="lista" role="list">
+                            <li><a class="elemento" href="mailto:alvaro@example.com">alvaro@example.com</a></li>
+                            <li><a class="elemento" href="www.linkedin.com/in/agcm2504" target="_blank" rel="noopener">LinkedIn</a></li>
+                            <li><a class="elemento" href="https://github.com/Phonethedor" target="_blank" rel="noopener">GitHub</a></li>
+                        </ul>
+                    </nav>
+                </section>
+            </main>
+            <footer class="pie">
+                <p>© 2025 Alvaro Castillo — Portafolio</p>
+            </footer>
+        </div>
+    </body>
+</html>
