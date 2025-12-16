@@ -1,8 +1,10 @@
 $(document).ready(function() {
+        // Inicializar el carrusel con autoplay cada 5 segundos
         $('#carouselExampleAutoplaying').carousel({
             interval: 5000
         });
         
+        // Manejar el clic en el botón de favorito
         $('#listaProductos').on('click', '.btn-favorito', function() {
             
             const $button = $(this);
@@ -13,6 +15,7 @@ $(document).ready(function() {
             let mensaje = "";
             let claseToast = "";
             
+            // Alternar el estado de favorito
             if (esFavorito === false) {
                 $button.data('favorito', true);
                 $button.removeClass('btn-outline-danger').addClass('btn-danger');                
@@ -31,6 +34,8 @@ $(document).ready(function() {
                 mensaje = `💔 **${nombreProducto}** eliminado de tus favoritos.`;
                 claseToast = "bg-warning text-dark";
             }
+
+            // Mostrar el toast con el mensaje correspondiente
             const toastElement = document.getElementById('toastMensaje');
             const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastElement);
             $(toastElement).removeClass().addClass(`toast align-items-center text-white border-0 ${claseToast}`);

@@ -1,0 +1,62 @@
+:root {
+  --background-color: #f4f4f4;
+  --box-shadow: rgba(0,0,0,0.2);
+}
+
+body {
+  background: var(--background-color);
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  padding-top: 50px;
+}
+
+.contenedor {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px var(--box-shadow);
+  width: 300px;
+  text-align: center;
+}
+
+input {
+  width: 90%;
+  padding: 8px;
+  margin: 10px 0;
+}
+
+.botones button {
+  padding: 10px;
+  margin: 5px;
+  width: 45%;
+  cursor: pointer;
+}
+
+#resultado {
+  margin-top: 20px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+/*
+  media queries
+*/
+
+@media (max-width: 400px) {
+  .contenedor {
+    width: 90%;
+  }
+}
+
+@media (min-width: 401px) and (max-width: 800px) {
+  .contenedor {
+    width: 70%;
+  }
+}
+
+@media (min-width: 801px) {
+  .contenedor {
+    width: 300px;
+  }
+}
