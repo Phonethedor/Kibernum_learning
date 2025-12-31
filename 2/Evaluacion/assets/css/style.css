@@ -1,11 +1,11 @@
-/* Google Fonts Import done in HTML */
+/* Importación de fuentes de Google realizada en HTML */
 :root {
     --primary-color: #2c3e50;
-    /* Deep Slate Blue */
+    /* Azul Pizarra Profundo */
     --secondary-color: #34495e;
-    /* Lighter Slate */
+    /* Pizarra Más Claro */
     --accent-color: #3498db;
-    /* Professional Blue */
+    /* Azul Profesional */
     --text-color: #333;
     --bg-light: #f8f9fa;
     --white: #ffffff;
@@ -30,10 +30,10 @@ h6 {
     font-weight: 600;
 }
 
-/* Navbar Premium Styling */
+/* Estilos Premium de la Barra de Navegación */
 .navbar {
     background: rgba(44, 62, 80, 0.95) !important;
-    /* Semi-transparent Brand Color */
+    /* Color de Marca Semitransparente */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 }
@@ -52,7 +52,7 @@ h6 {
     color: var(--accent-color) !important;
 }
 
-/* Header / Hero Section */
+/* Encabezado / Sección Hero */
 header.bg-primary {
     background: linear-gradient(135deg, #2c3e50 0%, #4ca1af 100%) !important;
     padding-top: 120px !important;
@@ -63,7 +63,7 @@ header.bg-primary {
     overflow: hidden;
 }
 
-/* Header Decoration Circle */
+/* Círculo Decorativo del Encabezado */
 header.bg-primary::before {
     content: '';
     position: absolute;
@@ -88,7 +88,7 @@ header .lead {
     opacity: 0.9;
 }
 
-/* Section Titles */
+/* Títulos de Sección */
 .section-title {
     position: relative;
     padding-left: 15px;
@@ -97,7 +97,7 @@ header .lead {
     margin-bottom: 1.5rem;
 }
 
-/* Timeline Styling */
+/* Estilos de la Línea de Tiempo */
 .timeline {
     position: relative;
     padding-left: 20px;
@@ -135,7 +135,7 @@ header .lead {
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
 }
 
-/* Skills Badges */
+/* Insignias de Habilidades */
 .badge.bg-secondary {
     background-color: #fff !important;
     color: var(--primary-color);
@@ -156,7 +156,7 @@ header .lead {
     border-color: var(--primary-color);
 }
 
-/* Switch Styling */
+/* Estilos del Interruptor */
 .form-check-input {
     cursor: pointer;
     height: 1.5em;
@@ -168,7 +168,7 @@ header .lead {
     margin-left: 8px;
 }
 
-/* Footer */
+/* Pie de Página */
 footer {
     background-color: var(--primary-color) !important;
     color: rgba(255, 255, 255, 0.7) !important;
@@ -176,12 +176,12 @@ footer {
     margin-top: 4rem;
 }
 
-/* Scroll Offset for Fixed Navbar */
+/* Desplazamiento para la Barra de Navegación Fija */
 html {
     scroll-padding-top: 90px;
 }
 
-/* Animation Classes */
+/* Clases de Animación */
 .fade-in-section {
     opacity: 0;
     transform: translateY(30px);
@@ -194,7 +194,7 @@ html {
     transform: none;
 }
 
-/* Dark Mode Styles */
+/* Estilos del Modo Oscuro */
 body.dark-mode {
     background-color: #121212;
     color: #e0e0e0;

@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', function () {
 
 
-    // Dark Mode Toggle Logic
+    // Lógica de alternancia del modo oscuro
     const darkModeSwitch = document.getElementById('darkModeSwitch');
     const currentTheme = localStorage.getItem('theme');
 
@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    // Intersection Observer for Fade-in Animation
+    // Observador de intersección para la animación de desvanecimiento
     const observerOptions = {
         root: null,
         rootMargin: '0px',
@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', function () {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('is-visible');
-                observer.unobserve(entry.target); // Only animate once
+                observer.unobserve(entry.target); // Animar solo una vez
             }
         });
     }, observerOptions);
@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
         observer.observe(section);
     });
 
-    // Smooth Scrolling for Navbar Links (Optional, as CSS scroll-behavior usually handles it, but this ensures it works on all browsers)
+    // Desplazamiento suave para enlaces de la barra de navegación (Opcional, ya que el comportamiento de desplazamiento CSS generalmente lo maneja, pero esto asegura que funcione en todos los navegadores)
     document.querySelectorAll('a.nav-link[href^="#"]').forEach(anchor => {
         anchor.addEventListener('click', function (e) {
             e.preventDefault();
@@ -50,7 +50,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const targetElement = document.querySelector(targetId);
 
             if (targetElement) {
-                // Close mobile menu if open
+                // Cerrar menú móvil si está abierto
                 const navbarToggler = document.querySelector('.navbar-toggler');
                 const navbarCollapse = document.querySelector('.navbar-collapse');
                 if (window.getComputedStyle(navbarToggler).display !== 'none' && navbarCollapse.classList.contains('show')) {
