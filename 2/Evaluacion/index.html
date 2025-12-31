@@ -4,6 +4,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Roboto:wght@300;400;500&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -11,58 +16,108 @@
 </head>
 
 <body>
-    <header class="bg-primary text-white text-center py-4 position-relative">
-        <h1>Curriculum Vitae</h1>
-        <p>Alvaro Castillo</p>
-        <div class="position-absolute top-0 end-0 m-3 form-check form-switch">
-            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
-            <label class="form-check-label" for="darkModeSwitch">Modo Oscuro</label>
-        </div>
-    </header>
-    <main class="container my-5">
-        <section class="mb-5">
-            <h2 class="mb-3">Experiencia Laboral</h2>
-            <div class="mb-4">
-                <h3>Desarrollador Web - Empresa XYZ</h3>
-                <p><strong>Junio 2020 - Presente</strong></p>
-                <ul>
-                    <li>Desarrollo y mantenimiento de sitios web utilizando HTML, CSS, JavaScript y frameworks modernos.
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Curriculum Vitae</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto align-items-center">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experiencia">Experiencia Laboral</a>
                     </li>
-                    <li>Colaboración con equipos de diseño y marketing para mejorar la experiencia del usuario.</li>
-                    <li>Implementación de soluciones de comercio electrónico y optimización SEO.</li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#educacion">Educación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#habilidades">Habilidades</a>
+                    </li>
+                    <li class="nav-item ms-3">
+                        <div class="form-check form-switch text-white">
+                            <input class="form-check-input" type="checkbox" id="darkModeSwitch">
+                            <label class="form-check-label" for="darkModeSwitch"><i class="fas fa-moon"></i></label>
+                        </div>
+                    </li>
                 </ul>
             </div>
-            <div class="mb-4">
-                <h3>Asistente de TI - Empresa ABC</h3>
-                <p><strong>Enero 2018 - Mayo 2020</strong></p>
-                <ul>
-                    <li>Soporte técnico a usuarios internos y resolución de problemas de hardware y software.</li>
-                    <li>Mantenimiento de redes y sistemas informáticos.</li>
-                    <li>Implementación de políticas de seguridad informática.</li>
-                </ul>
+        </div>
+    </nav>
+
+    <header class="bg-primary text-white text-center py-5 mt-5">
+        <h1>Alvaro Castillo</h1>
+        <p class="lead">Desarrollador Web</p>
+    </header>
+    <main class="container my-5">
+        <section id="experiencia" class="mb-5 fade-in-section">
+            <h2 class="section-title mb-4"><i class="fas fa-briefcase me-2"></i>Experiencia Laboral</h2>
+            <div class="timeline">
+                <div class="timeline-item mb-4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 fw-bold">Desarrollador Web - Empresa XYZ</h3>
+                        <p class="text-muted small mb-2"><i class="far fa-calendar-alt me-1"></i>Junio 2020 - Presente
+                        </p>
+                        <ul>
+                            <li>Desarrollo y mantenimiento de sitios web utilizando HTML, CSS, JavaScript y frameworks
+                                modernos.</li>
+                            <li>Colaboración con equipos de diseño y marketing para mejorar la experiencia del usuario.
+                            </li>
+                            <li>Implementación de soluciones de comercio electrónico y optimización SEO.</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="timeline-item mb-4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 fw-bold">Asistente de TI - Empresa ABC</h3>
+                        <p class="text-muted small mb-2"><i class="far fa-calendar-alt me-1"></i>Enero 2018 - Mayo 2020
+                        </p>
+                        <ul>
+                            <li>Soporte técnico a usuarios internos y resolución de problemas de hardware y software.
+                            </li>
+                            <li>Mantenimiento de redes y sistemas informáticos.</li>
+                            <li>Implementación de políticas de seguridad informática.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="mb-5">
-            <h2 class="mb-3">Educación</h2>
-            <div class="mb-4">
-                <h3>Licenciatura en Ingeniería Informática - Universidad DEF</h3>
-                <p><strong>2014 - 2018</strong></p>
-                <ul>
-                    <li>Especialización en desarrollo de software y sistemas web.</li>
-                    <li>Proyectos destacados: Desarrollo de una aplicación web para gestión de tareas.</li>
-                </ul>
+        <section id="educacion" class="mb-5 fade-in-section">
+            <h2 class="section-title mb-4"><i class="fas fa-graduation-cap me-2"></i>Educación</h2>
+            <div class="timeline">
+                <div class="timeline-item mb-4">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <h3 class="h5 fw-bold">Licenciatura en Ingeniería Informática - Universidad DEF</h3>
+                        <p class="text-muted small mb-2"><i class="far fa-calendar-alt me-1"></i>2014 - 2018</p>
+                        <ul>
+                            <li>Especialización en desarrollo de software y sistemas web.</li>
+                            <li>Proyectos destacados: Desarrollo de una aplicación web para gestión de tareas.</li>
+                        </ul>
+                    </div>
+                </div>
             </div>
         </section>
-        <section class="mb-5">
-            <h2 class="mb-3">Habilidades</h2>
-            <ul>
-                <li>Lenguajes de programación: Java, JavaScript, TypeScript, Python.</li>
-                <li>Frameworks front-end: Angular.</li>
-                <li>Frameworks back-end: Express.js, Spring Boot, Django.</li>
-                <li>Herramientas: Git, AWS, Figma.</li>
-                <li>Idiomas: Español (nativo), Inglés (avanzado).</li>
-            </ul>
+        <section id="habilidades" class="mb-5 fade-in-section">
+            <h2 class="section-title mb-4"><i class="fas fa-tools me-2"></i>Habilidades</h2>
+            <div class="d-flex flex-wrap gap-2 skills-container">
+                <span class="badge bg-secondary">Java</span>
+                <span class="badge bg-secondary">JavaScript</span>
+                <span class="badge bg-secondary">TypeScript</span>
+                <span class="badge bg-secondary">Python</span>
+                <span class="badge bg-secondary">Angular</span>
+                <span class="badge bg-secondary">Express.js</span>
+                <span class="badge bg-secondary">Spring Boot</span>
+                <span class="badge bg-secondary">Django</span>
+                <span class="badge bg-secondary">Git</span>
+                <span class="badge bg-secondary">AWS</span>
+                <span class="badge bg-secondary">Figma</span>
+                <span class="badge bg-secondary">Español (Nativo)</span>
+                <span class="badge bg-secondary">Inglés (Avanzado)</span>
+            </div>
         </section>
     </main>
     <footer class="bg-light text-center py-4">
