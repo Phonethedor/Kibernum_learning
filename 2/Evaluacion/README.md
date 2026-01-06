@@ -28,10 +28,6 @@ El sitio es totalmente responsivo y cuenta con una interfaz moderna que incluye 
 *   `assets/js/script.js`: Scripts para interactividad y efectos.
 *   `assets/icon/`: Contiene el favicon del sitio.
 
-## Cómo Visualizar
-
-Para ver el proyecto, simplemente abre el archivo `index.html` en tu navegador web preferido. No se requiere un servidor backend para su ejecución básica.
-
 ## Autor
 
 **Alvaro Castillo**
