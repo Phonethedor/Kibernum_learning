@@ -88,6 +88,22 @@ header .lead {
     opacity: 0.9;
 }
 
+/* Imagen de Perfil */
+.profile-img {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 6px solid rgba(255, 255, 255, 0.3);
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.profile-img:hover {
+    transform: scale(1.05);
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
 /* Títulos de Sección */
 .section-title {
     position: relative;
@@ -242,4 +258,46 @@ body.dark-mode .badge.bg-secondary:hover {
 
 body.dark-mode footer {
     background-color: #0d1117 !important;
+}
+
+/* Estilos de Contacto */
+.contact-card {
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid rgba(0, 0, 0, 0.03);
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-card .icon-box {
+    color: var(--accent-color);
+    margin-bottom: 1rem;
+}
+
+.contact-card a {
+    color: var(--text-color);
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.contact-card a:hover {
+    color: var(--accent-color);
+}
+
+body.dark-mode .contact-card {
+    background: #1e1e1e;
+    border: 1px solid #333;
+}
+
+body.dark-mode .contact-card a {
+    color: #e0e0e0;
+}
+
+body.dark-mode .contact-card a:hover {
+    color: var(--accent-color);
 }
