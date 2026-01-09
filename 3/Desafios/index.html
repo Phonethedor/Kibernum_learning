@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panadería Delicias de Viña</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Header -->
+    <header class="header" id="header">
+        <div class="container nav-container">
+            <a href="#" class="logo">Delicias de <span class="highlight">Viña</span></a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Inicio</a></li>
+                    <li><a href="#products" class="nav-link">Productos</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="nav-toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+            <span class="hero-subtitle">Tradición en cada bocado</span>
+            <h1 class="hero-title">El mejor pan de <br> Viña del Mar</h1>
+            <p class="hero-text">Disfruta de la frescura y el sabor artesanal que nos caracteriza desde hace más de 30
+                años.</p>
+            <a href="#products" class="btn btn-primary">Ver Delicias</a>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features section">
+        <div class="container grid features-grid">
+            <div class="feature-item">
+                <i class="fas fa-bread-slice feature-icon"></i>
+                <h3 class="feature-title">Pan Artesanal</h3>
+                <p>Masa madre y fermentación lenta para el mejor sabor.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-birthday-cake feature-icon"></i>
+                <h3 class="feature-title">Pastelería Fina</h3>
+                <p>Dulces creaciones para celebrar tus momentos especiales.</p>
+            </div>
+            <div class="feature-item">
+                <i class="fas fa-coffee feature-icon"></i>
+                <h3 class="feature-title">Café de Grano</h3>
+                <p>El acompañamiento perfecto para nuestras preparaciones.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestros Favoritos</span>
+                <h2 class="section-title">Recién Horneados</h2>
+            </div>
+
+            <div class="grid products-grid">
+                <!-- Product 1 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                        <!-- Using a placeholder for other images, but user has img/1.jpg which we can use as hero or here -->
+                        <!-- Since I only have 1 user image, I will use it as a generic style for now or hero background. 
+                              For products, I'll use placeholders that fit the theme if I can't generate. 
+                              But I'll assume 1.jpg is general purpose. Let's use it for the first product. -->
+                        <img src="assets/img/hogaza.jpg" alt="Hogaza de Campo" class="product-img">
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Hogaza de Campo</h3>
+                        <span class="product-price">$2.500</span>
+                    </div>
+                </article>
+
+                <!-- Product 2 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="assets/img/croissant.jpg" alt="Croissants Franceses" class="product-img">
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Croissants Franceses</h3>
+                        <span class="product-price">$1.800</span>
+                    </div>
+                </article>
+
+                <!-- Product 3 -->
+                <article class="product-card">
+                    <div class="product-img-wrapper">
+                        <img src="assets/img/tarta.jpg" alt="Tarta de Frutas" class="product-img">
+                        <button class="btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product-content">
+                        <h3 class="product-title">Tarta de Frutas</h3>
+                        <span class="product-price">$3.500</span>
+                    </div>
+                </article>
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#" class="btn btn-outline">Ver Todo el Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about section" id="about">
+        <div class="container grid about-grid">
+            <div class="about-data">
+                <span class="section-subtitle">Nuestra Historia</span>
+                <h2 class="section-title">Pasión por lo <br> Hecho a Mano</h2>
+                <p class="about-description">
+                    Ubicados en el corazón de Viña del Mar, somos una panadería familiar dedicada a rescatar las recetas
+                    tradicionales.
+                    Creemos que el buen pan une a las personas, por eso cada mañana encendemos nuestros hornos con la
+                    misión de llevar
+                    calidez a tu mesa.
+                </p>
+                <div class="about-stats">
+                    <div class="stat-item">
+                        <span class="stat-number">15+</span>
+                        <span class="stat-title">Años de <br> Experiencia</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number">200+</span>
+                        <span class="stat-title">Productos <br> Diarios</span>
+                    </div>
+                </div>
+            </div>
+            <div class="about-img">
+                <img src="assets/img/mapa.jpg" alt="Ubicación Av. Libertad 123" class="product-img"
+                    style="height: 400px; object-fit: cover; border-radius: 8px;">
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact/Footer -->
+    <footer class="footer" id="contact">
+        <div class="container grid footer-grid">
+            <div class="footer-content">
+                <a href="#" class="footer-logo">Delicias de Viña</a>
+                <p class="footer-description">Panadería y pastelería artesanal en la costa.</p>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Contacto</h3>
+                <ul class="footer-links">
+                    <li><i class="fas fa-map-marker-alt"></i> Av. Libertad 123, Viña del Mar</li>
+                    <li><i class="fas fa-phone"></i> +56 32 123 4567</li>
+                    <li><i class="fas fa-envelope"></i> contacto@deliciasvina.cl</li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Horario</h3>
+                <ul class="footer-links">
+                    <li>Lun - Vie: 7:00 - 20:00</li>
+                    <li>Sáb - Dom: 8:00 - 19:00</li>
+                </ul>
+            </div>
+
+            <div class="footer-content">
+                <h3 class="footer-title">Síguenos</h3>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-copy text-center">
+            <p>&copy; 2024 Delicias de Viña. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+
+</html>
