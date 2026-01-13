@@ -5,21 +5,21 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Panadería Delicias de Viña</title>
-    <!-- Google Fonts -->
+    <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
         href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
         rel="stylesheet">
-    <!-- CSS -->
+    <!-- Estilos CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
-    <!-- Icons -->
+    <!-- Iconos -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
 <body>
 
-    <!-- Header -->
+    <!-- Encabezado -->
     <header class="header" id="header">
         <div class="container nav-container">
             <a href="#" class="logo">Delicias de <span class="highlight">Viña</span></a>
@@ -37,7 +37,7 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
+    <!-- Sección Principal (Hero) -->
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
@@ -49,7 +49,7 @@
         </div>
     </section>
 
-    <!-- Features Section -->
+    <!-- Sección de Características -->
     <section class="features section">
         <div class="container grid features-grid">
             <div class="feature-item">
@@ -70,7 +70,7 @@
         </div>
     </section>
 
-    <!-- Products Section -->
+    <!-- Sección de Productos -->
     <section class="products section" id="products">
         <div class="container">
             <div class="section-header text-center">
@@ -79,13 +79,9 @@
             </div>
 
             <div class="grid products-grid">
-                <!-- Product 1 -->
+                <!-- Producto 1 -->
                 <article class="product-card">
                     <div class="product-img-wrapper">
-                        <!-- Using a placeholder for other images, but user has img/1.jpg which we can use as hero or here -->
-                        <!-- Since I only have 1 user image, I will use it as a generic style for now or hero background. 
-                              For products, I'll use placeholders that fit the theme if I can't generate. 
-                              But I'll assume 1.jpg is general purpose. Let's use it for the first product. -->
                         <img src="assets/img/hogaza.jpg" alt="Hogaza de Campo" class="product-img">
                         <button class="btn-add"><i class="fas fa-plus"></i></button>
                     </div>
@@ -95,7 +91,7 @@
                     </div>
                 </article>
 
-                <!-- Product 2 -->
+                <!-- Producto 2 -->
                 <article class="product-card">
                     <div class="product-img-wrapper">
                         <img src="assets/img/croissant.jpg" alt="Croissants Franceses" class="product-img">
@@ -107,7 +103,7 @@
                     </div>
                 </article>
 
-                <!-- Product 3 -->
+                <!-- Producto 3 -->
                 <article class="product-card">
                     <div class="product-img-wrapper">
                         <img src="assets/img/tarta.jpg" alt="Tarta de Frutas" class="product-img">
@@ -125,7 +121,7 @@
         </div>
     </section>
 
-    <!-- About Section -->
+    <!-- Sección Nosotros -->
     <section class="about section" id="about">
         <div class="container grid about-grid">
             <div class="about-data">
@@ -156,8 +152,43 @@
         </div>
     </section>
 
-    <!-- Contact/Footer -->
-    <footer class="footer" id="contact">
+    <!-- Sección de Contacto -->
+    <section class="contact section" id="contact">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Contáctanos</span>
+                <h2 class="section-title">Reserva o Cotiza</h2>
+            </div>
+
+            <div class="contact-container">
+                <form action="" class="contact-form" id="contact-form">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Nombre</label>
+                        <input type="text" id="name" class="form-input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" class="form-input" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject" class="form-label">Asunto</label>
+                        <input type="text" id="subject" class="form-input" placeholder="Asunto" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message" class="form-label">Mensaje</label>
+                        <textarea id="message" class="form-input form-textarea" placeholder="Escribe tu mensaje aquí..."
+                            required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer" id="footer">
         <div class="container grid footer-grid">
             <div class="footer-content">
                 <a href="#" class="footer-logo">Delicias de Viña</a>

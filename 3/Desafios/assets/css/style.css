@@ -1,23 +1,23 @@
-/* Google Fonts Import in HTML, using variables here */
+/* Importación de Fuentes de Google en HTML, usando variables aquí */
 
 :root {
-    /* Colors */
+    /* Colores */
     --first-color: #d97706;
-    /* Golden Orange */
+    /* Naranja Dorado */
     --first-color-alt: #b45309;
     --text-color: #1f2937;
     --text-color-light: #6b7280;
     --body-color: #fffbeb;
-    /* Creamy white */
+    /* Blanco Cremoso */
     --container-color: #ffffff;
     --white-color: #ffffff;
     --black-color: #000000;
 
-    /* Fonts */
+    /* Fuentes */
     --body-font: 'Lato', sans-serif;
     --title-font: 'Playfair Display', serif;
 
-    /* Font Sizes */
+    /* Tamaños de Fuente */
     --big-font-size: 3rem;
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.5rem;
@@ -25,7 +25,7 @@
     --normal-font-size: 1rem;
     --small-font-size: 0.875rem;
 
-    /* Spacing */
+    /* Espaciado */
     --header-height: 3.5rem;
 
     /* Z-index */
@@ -84,7 +84,7 @@ img {
     height: auto;
 }
 
-/* --- Reusable Classes --- */
+/* --- Clases Reutilizables --- */
 .container {
     max-width: 1024px;
     margin-left: 1.5rem;
@@ -150,7 +150,7 @@ img {
     color: var(--white-color);
 }
 
-/* --- Header --- */
+/* --- Encabezado --- */
 .header {
     width: 100%;
     position: fixed;
@@ -200,7 +200,7 @@ img {
     color: var(--first-color);
 }
 
-/* --- Hero --- */
+/* --- Principal (Hero) --- */
 .hero {
     position: relative;
     height: 100vh;
@@ -213,7 +213,7 @@ img {
 }
 
 /* Dark overlay for better text readability */
-/* Dark overlay for better text readability */
+/* Superposición oscura para mejor legibilidad */
 .hero-overlay {
     position: absolute;
     top: 0;
@@ -221,7 +221,7 @@ img {
     width: 100%;
     height: 100%;
     background: linear-gradient(to bottom, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.8));
-    /* Dynamic gradient for better depth */
+    /* Degradado dinámico para mejor profundidad */
 }
 
 .hero-content {
@@ -237,7 +237,7 @@ img {
     font-family: var(--title-font);
     font-style: italic;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    /* Added shadow */
+    /* Sombra añadida */
 }
 
 .hero-title {
@@ -257,7 +257,7 @@ img {
     text-shadow: 0 1px 2px rgba(0, 0, 0, 0.5);
 }
 
-/* --- Features --- */
+/* --- Características --- */
 .features-grid {
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 3rem;
@@ -288,7 +288,7 @@ img {
     margin-bottom: 0.5rem;
 }
 
-/* --- Products --- */
+/* --- Productos --- */
 .products-grid {
     grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
 }
@@ -362,7 +362,7 @@ img {
     color: var(--first-color);
 }
 
-/* --- About --- */
+/* --- Nosotros --- */
 .about-grid {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
@@ -394,7 +394,7 @@ img {
     color: var(--text-color);
 }
 
-/* --- Footer --- */
+/* --- Pie de Página --- */
 .footer {
     background-color: var(--text-color);
     color: var(--white-color);
@@ -464,7 +464,7 @@ img {
     font-size: var(--small-font-size);
 }
 
-/* --- Media Queries --- */
+/* --- Consultas de Medios (Media Queries) --- */
 @media screen and (max-width: 768px) {
     .nav-toggle {
         display: block;
@@ -505,4 +505,60 @@ img {
         margin-left: auto;
         margin-right: auto;
     }
+}
+
+/* --- Formulario de Contacto --- */
+.contact-container {
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: var(--container-color);
+    padding: 2.5rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.05);
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.form-label {
+    font-size: var(--small-font-size);
+    font-weight: 700;
+    color: var(--text-color);
+}
+
+.form-input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e5e7eb;
+    background-color: #f9fafb;
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    color: var(--text-color);
+    outline: none;
+    transition: .3s;
+}
+
+.form-input::placeholder {
+    color: var(--text-color-light);
+}
+
+.form-input:focus {
+    border-color: var(--first-color);
+    box-shadow: 0 0 0 4px rgba(217, 119, 6, 0.1);
+    background-color: var(--white-color);
+}
+
+.form-textarea {
+    resize: none;
+    height: 150px;
 }

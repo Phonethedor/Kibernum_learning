@@ -1,4 +1,4 @@
-/* Mobile Menu Toggle */
+/* Alternar Menú Móvil */
 const navToggle = document.getElementById('nav-toggle');
 const navMenu = document.querySelector('.nav');
 
@@ -6,7 +6,7 @@ if (navToggle) {
     navToggle.addEventListener('click', () => {
         navMenu.classList.toggle('show-menu');
 
-        // Change icon based on state
+        // Cambiar icono según estado
         const icon = navToggle.querySelector('i');
         if (navMenu.classList.contains('show-menu')) {
             icon.classList.remove('fa-bars');
@@ -18,7 +18,7 @@ if (navToggle) {
     });
 }
 
-/* Close menu when clicking a link */
+/* Cerrar menú al hacer clic en un enlace */
 const navLinks = document.querySelectorAll('.nav-link');
 navLinks.forEach(link => {
     link.addEventListener('click', () => {
@@ -31,7 +31,7 @@ navLinks.forEach(link => {
     });
 });
 
-/* Change Header Background on Scroll */
+/* Cambiar fondo del encabezado al desplazarse */
 const header = document.getElementById('header');
 window.addEventListener('scroll', () => {
     if (window.scrollY >= 50) {
@@ -43,8 +43,8 @@ window.addEventListener('scroll', () => {
     }
 });
 
-/* Scroll Reveal Animation (Simple version without external library) */
-const revealElements = document.querySelectorAll('.feature-item, .product-card, .about-data, .about-img');
+/* Animación de Aparición al Desplazarse (Versión simple sin librería externa) */
+const revealElements = document.querySelectorAll('.feature-item, .product-card, .about-data, .about-img, .contact-container');
 
 const revealOnScroll = () => {
     const windowHeight = window.innerHeight;
@@ -59,7 +59,7 @@ const revealOnScroll = () => {
     });
 };
 
-/* Initial styles for reveal elements */
+/* Estilos iniciales para elementos a revelar */
 revealElements.forEach(el => {
     el.style.opacity = '0';
     el.style.transform = 'translateY(20px)';
@@ -67,5 +67,5 @@ revealElements.forEach(el => {
 });
 
 window.addEventListener('scroll', revealOnScroll);
-// Trigger once on load
+// Ejecutar una vez al cargar
 revealOnScroll();
