@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Panadería Delicias de Viña</title>
+    <title>Delicias de Viña - Panadería y Cafetería</title>
     <!-- Fuentes de Google -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,7 +28,8 @@
                     <li><a href="#home" class="nav-link active">Inicio</a></li>
                     <li><a href="#products" class="nav-link">Productos</a></li>
                     <li><a href="#about" class="nav-link">Nosotros</a></li>
-                    <li><a href="#contact" class="nav-link">Contacto</a></li>
+                    <li><a href="#about" class="nav-link">Nosotros</a></li>
+                    <li><a href="#reservation" class="nav-link nav-btn">Reserva Ahora</a></li>
                 </ul>
             </nav>
             <div class="nav-toggle" id="nav-toggle">
@@ -41,11 +42,14 @@
     <section class="hero" id="home">
         <div class="hero-overlay"></div>
         <div class="container hero-content">
-            <span class="hero-subtitle">Tradición en cada bocado</span>
-            <h1 class="hero-title">El mejor pan de <br> Viña del Mar</h1>
-            <p class="hero-text">Disfruta de la frescura y el sabor artesanal que nos caracteriza desde hace más de 30
-                años.</p>
-            <a href="#products" class="btn btn-primary">Ver Delicias</a>
+            <span class="hero-subtitle">El sabor de siempre, nueva experiencia</span>
+            <h1 class="hero-title">Del horno a tu mesa, <br> ahora con café</h1>
+            <p class="hero-text">Evolucionamos de nuestra tradicional panadería a un acogedor espacio de cafetería.
+                Disfruta tus sabores favoritos en nuestro nuevo salón.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#reservation" class="btn btn-primary">Reservar Mesa</a>
+                <a href="#products" class="btn btn-secondary">Ver Productos</a>
+            </div>
         </div>
     </section>
 
@@ -64,8 +68,8 @@
             </div>
             <div class="feature-item">
                 <i class="fas fa-coffee feature-icon"></i>
-                <h3 class="feature-title">Café de Grano</h3>
-                <p>El acompañamiento perfecto para nuestras preparaciones.</p>
+                <h3 class="feature-title">Nueva Barra de Café</h3>
+                <p>Nuestra panadería crece: disfruta ahora de café de grano 100% arábica preparado por baristas.</p>
             </div>
         </div>
     </section>
@@ -125,10 +129,14 @@
     <section class="about section" id="about">
         <div class="container grid about-grid">
             <!-- Formulario de Contacto (Izquierda) -->
-            <div class="contact-container" style="height: fit-content; margin: 0;">
+            <div class="contact-container" id="reservation" style="height: fit-content; margin: 0;">
                 <h3 class="section-title"
-                    style="font-size: var(--h3-font-size); margin-bottom: 1.5rem; text-align: left;">Reserva o Cotiza
+                    style="font-size: var(--h3-font-size); margin-bottom: 0.5rem; text-align: left;">Reserva o Cotiza
                 </h3>
+                <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-color-light);">
+                    ¿Prefieres llamar? <strong style="color: var(--first-color);"><i class="fas fa-phone"></i> +56 32
+                        123 4567</strong>
+                </p>
                 <form action="" class="contact-form" id="contact-form">
                     <div class="form-group">
                         <label for="name" class="form-label">Nombre</label>
@@ -157,15 +165,12 @@
             <div class="about-content-wrapper">
                 <div class="about-data">
                     <span class="section-subtitle" style="text-align: left;">Nuestra Historia</span>
-                    <h2 class="section-title" style="text-align: left;">Pasión por lo <br> Hecho a Mano</h2>
+                    <h2 class="section-title" style="text-align: left;">De Panadería <br> a Cafetería</h2>
                     <p class="about-description">
-                        Ubicados en el corazón de Viña del Mar, somos una panadería familiar dedicada a rescatar las
-                        recetas
-                        tradicionales.
-                        Creemos que el buen pan une a las personas, por eso cada mañana encendemos nuestros hornos con
-                        la
-                        misión de llevar
-                        calidez a tu mesa.
+                        Durante décadas fuimos "la panadería del barrio" en Viña del Mar. Hoy, cumplimos un sueño:
+                        transformar nuestro espacio para que no solo lleves el pan, sino que te quedes a disfrutarlo.
+                        Mantenemos nuestra esencia artesanal de siempre, pero ahora te invitamos a vivir la experiencia
+                        completa con una taza de café en mano.
                     </p>
                     <div class="about-stats">
                         <div class="stat-item">
@@ -191,7 +196,7 @@
         <div class="container grid footer-grid">
             <div class="footer-content">
                 <a href="#" class="footer-logo">Delicias de Viña</a>
-                <p class="footer-description">Panadería y pastelería artesanal en la costa.</p>
+                <p class="footer-description">Tu panadería de siempre, ahora tu cafetería favorita.</p>
             </div>
 
             <div class="footer-content">

@@ -150,6 +150,31 @@ img {
     color: var(--white-color);
 }
 
+.btn-secondary {
+    background-color: transparent;
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--white-color);
+    color: var(--text-color);
+}
+
+/* Button inside Navigation */
+.nav-btn {
+    padding: 0.5rem 1.5rem;
+    background-color: var(--first-color);
+    color: var(--white-color) !important;
+    border-radius: 2rem;
+    box-shadow: 0 4px 8px rgba(217, 119, 6, 0.3);
+}
+
+.nav-btn:hover {
+    background-color: var(--first-color-alt);
+    transform: translateY(-2px);
+}
+
 /* --- Encabezado --- */
 .header {
     width: 100%;
@@ -208,11 +233,9 @@ img {
     align-items: center;
     justify-content: center;
     text-align: center;
-    /* User specified img/1.jpg. Assuming it's suitable for bg or we use a fallback */
     background: url('../img/1.jpg') no-repeat center center/cover;
 }
 
-/* Dark overlay for better text readability */
 /* Superposición oscura para mejor legibilidad */
 .hero-overlay {
     position: absolute;
@@ -490,6 +513,13 @@ img {
     .nav-list {
         flex-direction: column;
         align-items: center;
+        gap: 1.5rem;
+    }
+
+    .nav-btn {
+        width: 80%;
+        /* Botón ancho en móvil */
+        text-align: center;
     }
 
     .about-grid {
