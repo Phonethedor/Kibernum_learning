@@ -69,3 +69,33 @@ revealElements.forEach(el => {
 window.addEventListener('scroll', revealOnScroll);
 // Ejecutar una vez al cargar
 revealOnScroll();
+
+/* Lógica del Formulario de Contacto y Modal */
+const contactForm = document.getElementById('contact-form');
+const modal = document.getElementById('success-modal');
+const modalCloseBtn = document.getElementById('modal-close');
+
+if (contactForm) {
+    contactForm.addEventListener('submit', (e) => {
+        e.preventDefault(); // Evitar envío real del formulario
+
+        // Simular envío exitoso y mostrar modal
+        modal.classList.add('active');
+
+        // Opcional: Limpiar formulario
+        contactForm.reset();
+    });
+}
+
+if (modalCloseBtn) {
+    modalCloseBtn.addEventListener('click', () => {
+        modal.classList.remove('active');
+    });
+}
+
+// Cerrar modal al hacer clic fuera del contenido
+window.addEventListener('click', (e) => {
+    if (e.target === modal) {
+        modal.classList.remove('active');
+    }
+});
