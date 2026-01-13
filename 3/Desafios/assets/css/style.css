@@ -365,7 +365,8 @@ img {
 /* --- Nosotros --- */
 .about-grid {
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: start;
+    gap: 4rem;
 }
 
 .about-data {
