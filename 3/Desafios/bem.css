@@ -1,0 +1,84 @@
+body {
+    font-family: sans-serif;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #f3f3f3;
+}
+
+
+/* 
+    METODOLOGÍA BEM
+    ---------------
+    Bloque:      .card
+    Elemento:    .card__elemento
+    Modificador: .card--modificador
+*/
+
+/* BLOQUE */
+.card {
+    background-color: white;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 250px;
+    transition: all 0.3s ease;
+}
+
+/* ELEMENTOS */
+.card__titulo {
+    margin-top: 0;
+    font-size: 1.25rem;
+    color: #333;
+}
+
+.card__texto {
+    color: #666;
+    line-height: 1.5;
+}
+
+.card__boton {
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    margin-top: 10px;
+}
+
+/* MODIFICADORES */
+
+/* Estado Activo (.card--activa) */
+.card--activa {
+    border-color: #4caf50;
+    /* Verde */
+    background-color: #f1f8e9;
+    box-shadow: 0 5px 15px rgba(76, 175, 80, 0.3);
+}
+
+.card--activa .card__titulo {
+    color: #2e7d32;
+}
+
+.card--activa .card__boton {
+    background-color: #4caf50;
+}
+
+/* Estado Inactivo (.card--inactiva) */
+.card--inactiva {
+    border-color: #ccc;
+    background-color: #f5f5f5;
+    opacity: 0.7;
+}
+
+.card--inactiva .card__titulo {
+    color: #999;
+}
+
+.card--inactiva .card__boton {
+    background-color: #ccc;
+    cursor: not-allowed;
+    color: #888;
+}

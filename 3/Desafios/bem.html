@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo BEM</title>
+    <link rel="stylesheet" href="bem.css">
+</head>
+
+<body>
+    <!-- Bloque: Tarjeta Base -->
+    <div class="card">
+        <h2 class="card__titulo">Tarjeta Normal</h2>
+        <p class="card__texto">Esta es una tarjeta estándar sin ningún estado especial.</p>
+        <button class="card__boton">Acción</button>
+    </div>
+
+    <!-- Bloque con Modificador: Tarjeta Activa -->
+    <div class="card card--activa">
+        <h2 class="card__titulo">Tarjeta Activa</h2>
+        <p class="card__texto">Esta tarjeta destaca porque está activa.</p>
+        <button class="card__boton">Acción</button>
+    </div>
+
+    <!-- Bloque con Modificador: Tarjeta Inactiva -->
+    <div class="card card--inactiva">
+        <h2 class="card__titulo">Tarjeta Inactiva</h2>
+        <p class="card__texto">Esta tarjeta parece deshabilitada.</p>
+        <button class="card__boton">Acción</button>
+    </div>
+</body>
+
+</html>
