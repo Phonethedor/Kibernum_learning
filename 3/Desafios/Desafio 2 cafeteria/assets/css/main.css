@@ -1,0 +1,139 @@
+@import 'blocks/_btn.css';
+@import 'blocks/_header.css';
+@import 'blocks/_nav.css';
+@import 'blocks/_hero.css';
+@import 'blocks/_marquee.css';
+@import 'blocks/_feature.css';
+@import 'blocks/_product.css';
+@import 'blocks/_about.css';
+@import 'blocks/_contact.css';
+@import 'blocks/_footer.css';
+@import 'blocks/_modal.css';
+
+/* --- Variables y Configuración Global --- */
+:root {
+    /* Colores */
+    --first-color: #d97706;
+    /* Naranja Dorado */
+    --first-color-alt: #b45309;
+    --text-color: #1f2937;
+    --text-color-light: #6b7280;
+    --body-color: #fffbeb;
+    /* Blanco Cremoso */
+    --container-color: #ffffff;
+    --white-color: #ffffff;
+    --black-color: #000000;
+
+    /* Fuentes */
+    --body-font: 'Lato', sans-serif;
+    --title-font: 'Playfair Display', serif;
+
+    /* Tamaños de Fuente */
+    --big-font-size: 3rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.5rem;
+    --h3-font-size: 1.25rem;
+    --normal-font-size: 1rem;
+    --small-font-size: 0.875rem;
+
+    /* Espaciado */
+    --header-height: 3.5rem;
+
+    /* Z-index */
+    --z-fixed: 100;
+}
+
+@media screen and (min-width: 968px) {
+    :root {
+        --big-font-size: 4.5rem;
+        --h1-font-size: 3rem;
+        --h2-font-size: 2rem;
+        --h3-font-size: 1.5rem;
+        --normal-font-size: 1.125rem;
+        --small-font-size: 1rem;
+    }
+}
+
+/* --- Base --- */
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: var(--body-font);
+    font-size: var(--normal-font-size);
+    background-color: var(--body-color);
+    color: var(--text-color);
+    line-height: 1.6;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* --- Utilidades --- */
+.container {
+    max-width: 1024px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+@media screen and (min-width: 1024px) {
+    .container {
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.grid {
+    display: grid;
+    gap: 1.5rem;
+}
+
+.section {
+    padding: 4.5rem 0 2rem;
+}
+
+.section-title {
+    font-size: var(--h2-font-size);
+    margin-bottom: 2.5rem;
+    text-align: center;
+}
+
+.section-subtitle {
+    display: block;
+    font-size: var(--small-font-size);
+    color: var(--first-color);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-bottom: 0.5rem;
+    text-align: center;
+}
+
+.text-center {
+    text-align: center;
+}
