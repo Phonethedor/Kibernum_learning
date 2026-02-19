@@ -1,0 +1,23 @@
+Un sitio con wenas practicas
+usando: 
+- bootstrap
+- bem u otra metodologia css
+- sass
+
+tema: Restaurante Urbano
+- vibes: Negros, naranjas o amarillos, fotos de comida "chorreante"
+- Retos: Menun en Grid y formulario de reservas
+
+Apuntar a locales cercanos
+entregar en .rar
+
+considerar:
+- alert
+- modal
+- hamburguesa
+- breadcrumbs
+- Carrusel impactante
+
+Diseño por sobre todo.
+
+3 sitios de referencia.

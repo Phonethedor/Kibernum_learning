@@ -1,0 +1,147 @@
+/* Font Import for that "Street Food" Vibe */
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Open+Sans:wght@400;700&display=swap');
+
+:root {
+    --street-black: #121212;
+    --street-dark-grey: #1e1e1e;
+    --street-orange: #ff5e00;
+    --street-yellow: #ffcc00;
+    --street-white: #f8f9fa;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    background-color: var(--street-black);
+    color: var(--street-white);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+.navbar-brand,
+.btn-street {
+    font-family: 'Anton', sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+/* Custom Color Utilities */
+.text-orange {
+    color: var(--street-orange) !important;
+}
+
+.text-yellow {
+    color: var(--street-yellow) !important;
+}
+
+.bg-orange {
+    background-color: var(--street-orange) !important;
+    color: white;
+}
+
+.bg-yellow {
+    background-color: var(--street-yellow) !important;
+    color: black;
+}
+
+/* Navbar */
+.navbar {
+    background-color: rgba(18, 18, 18, 0.95) !important;
+    border-bottom: 2px solid var(--street-orange);
+    backdrop-filter: blur(10px);
+}
+
+.nav-link {
+    color: var(--street-white) !important;
+    transition: 0.3s;
+}
+
+.nav-link:hover,
+.nav-link.active {
+    color: var(--street-orange) !important;
+}
+
+/* Custom Button */
+.btn-street {
+    background-color: var(--street-orange);
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    font-size: 1.2rem;
+    transition: transform 0.2s, background-color 0.2s;
+}
+
+.btn-street:hover {
+    background-color: var(--street-yellow);
+    color: black;
+    transform: scale(1.05);
+}
+
+/* Cards (Menu) */
+.card {
+    background-color: var(--street-dark-grey);
+    border: 1px solid #333;
+    transition: transform 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    border-color: var(--street-orange);
+    box-shadow: 0 5px 15px rgba(255, 94, 0, 0.2);
+}
+
+.card-title {
+    color: var(--street-yellow);
+}
+
+/* Carousel */
+.carousel-item img {
+    height: 600px;
+    object-fit: cover;
+    filter: brightness(0.6);
+}
+
+.carousel-caption {
+    background: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
+    border-left: 5px solid var(--street-orange);
+}
+
+/* Form Styles */
+.form-control,
+.form-select {
+    background-color: #2a2a2a;
+    border: 1px solid #444;
+    color: white;
+}
+
+.form-control:focus,
+.form-select:focus {
+    background-color: #333;
+    border-color: var(--street-orange);
+    color: white;
+    box-shadow: 0 0 0 0.25rem rgba(255, 94, 0, 0.25);
+}
+
+/* Modal */
+.modal-content {
+    background-color: var(--street-dark-grey);
+    border: 2px solid var(--street-orange);
+    color: white;
+}
+
+.modal-header {
+    border-bottom: 1px solid #444;
+}
+
+.modal-footer {
+    border-top: 1px solid #444;
+}
+
+.btn-close {
+    filter: invert(1);
+}
