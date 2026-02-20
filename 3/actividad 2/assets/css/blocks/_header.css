@@ -1,0 +1,27 @@
+.header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: var(--z-fixed);
+    background-color: var(--body-color);
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+    transition: .3s;
+}
+
+.header__container {
+    height: var(--header-height);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header__logo {
+    font-family: var(--title-font);
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.header__logo .highlight {
+    color: var(--first-color);
+}
