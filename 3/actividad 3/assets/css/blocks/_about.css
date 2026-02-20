@@ -1,0 +1,42 @@
+.about__grid {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: start;
+    gap: 4rem;
+}
+
+.about__data {
+    text-align: left;
+}
+
+.about__description {
+    margin-bottom: 2rem;
+    color: var(--text-color-light);
+}
+
+.about__stats {
+    display: flex;
+    gap: 3rem;
+}
+
+.stat__number {
+    display: block;
+    font-size: var(--h2-font-size);
+    font-weight: 700;
+    color: var(--first-color);
+}
+
+.stat__title {
+    font-size: var(--small-font-size);
+    color: var(--text-color);
+}
+
+/* Responsive About */
+@media screen and (max-width: 768px) {
+    .about__grid {
+        grid-template-columns: 1fr;
+    }
+
+    .about__img-wrapper {
+        order: -1;
+    }
+}

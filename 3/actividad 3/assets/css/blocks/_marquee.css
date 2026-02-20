@@ -1,0 +1,29 @@
+.marquee {
+    width: 100%;
+    overflow: hidden;
+    background: #111;
+    color: #fff;
+    padding: 12px 0;
+    font-weight: 600;
+}
+
+.marquee__track {
+    display: flex;
+    gap: 3rem;
+    width: max-content;
+    animation: scroll 20s linear infinite;
+}
+
+.marquee__track span {
+    white-space: nowrap;
+}
+
+@keyframes scroll {
+    from {
+        transform: translateX(0);
+    }
+
+    to {
+        transform: translateX(-50%);
+    }
+}

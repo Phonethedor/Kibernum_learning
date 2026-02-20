@@ -4,16 +4,291 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta author="Alvaro Castillo">
-    <meta description="Actividad 3">
-    <title>Document</title>
-    <link rel="stylesheet" href="css/style.css">
+    <title>Delicias de Viña - Panadería y Cafetería</title>
+    <!-- Fuentes de Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Lato:wght@300;400;700&display=swap"
+        rel="stylesheet">
+    <!-- Estilos CSS -->
+    <link rel="stylesheet" href="assets/css/main.css">
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
 </head>
 
 <body>
 
+    <!-- Encabezado -->
+    <header class="header" id="header">
+        <div class="container header__container">
+            <a href="#" class="header__logo">Delicias de <span class="highlight">Viña</span></a>
+            <nav class="nav" id="nav-menu">
+                <ul class="nav__list">
+                    <li><a href="#home" class="nav__link nav__link--active">Inicio</a></li>
+                    <li><a href="#products" class="nav__link">Productos</a></li>
+                    <li><a href="#about" class="nav__link">Nosotros</a></li>
+                    <li><a href="#reservation" class="nav__link btn btn--primary nav__btn">Reserva Ahora</a></li>
+                </ul>
+            </nav>
+            <div class="nav__toggle" id="nav-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
 
-    <script src="js/script.js"></script>
+    <!-- Sección Principal (Hero) -->
+
+    <section class="hero" id="home">
+        <div class="hero__overlay"></div>
+        <div class="container hero__content">
+            <span class="hero__subtitle">El sabor de siempre, nueva experiencia</span>
+            <h1 class="hero__title">Del horno a tu mesa, <br> ahora con café</h1>
+            <p class="hero__text">Evolucionamos de nuestra tradicional panadería a un acogedor espacio de cafetería.
+                Disfruta tus sabores favoritos en nuestro nuevo salón.</p>
+            <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="#reservation" class="btn btn--primary">Reservar Mesa</a>
+                <a href="#products" class="btn btn--secondary">Ver Productos</a>
+            </div>
+        </div>
+    </section>
+    <div class="marquee">
+        <div class="marquee__track">
+            <span>Visita nuestra nueva cafetería, Avenida Libertad 123, Viña del mar</span>
+            <span>Reserva online, o llamando al +56 32 123 4567</span>
+            <span>Disfruta de un 10% de descuento en tu primera visita</span>
+            <span>Prueba nuestro café de grano 100% arábica, preparado por baristas expertos</span>
+
+        </div>
+    </div>
+
+    <!-- Sección de Características -->
+    <section class="features section">
+        <div class="container grid features__grid">
+            <div class="feature">
+                <i class="fas fa-bread-slice feature__icon"></i>
+                <h3 class="feature__title">Pan Artesanal</h3>
+                <p>Masa madre y fermentación lenta para el mejor sabor.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-birthday-cake feature__icon"></i>
+                <h3 class="feature__title">Pastelería Fina</h3>
+                <p>Dulces creaciones para celebrar tus momentos especiales.</p>
+            </div>
+            <div class="feature">
+                <i class="fas fa-coffee feature__icon"></i>
+                <h3 class="feature__title">Nueva Barra de Café</h3>
+                <p>Nuestra panadería crece: disfruta ahora de café de grano 100% arábica preparado por baristas.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección de Productos -->
+    <section class="products section" id="products">
+        <div class="container">
+            <div class="section-header text-center">
+                <span class="section-subtitle">Nuestros Favoritos</span>
+                <h2 class="section-title">Recién Horneados</h2>
+            </div>
+
+            <div class="grid products__grid">
+                <!-- Producto 1 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/hogaza.jpg" alt="Hogaza de Campo" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Hogaza de Campo</h3>
+                        <span class="product__price">$2.500</span>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/croissant.jpg" alt="Croissants Franceses" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Croissants Franceses</h3>
+                        <span class="product__price">$1.800</span>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/tarta.jpg" alt="Tarta de Frutas" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Tarta de Frutas</h3>
+                        <span class="product__price">$3.500</span>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/cafe3.jpg" alt="Café Espresso" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Café Espresso</h3>
+                        <span class="product__price">$1.200</span>
+                    </div>
+                </article>
+
+                <!-- Producto 5 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/cafe1.jpg" alt="Café Cappuccino" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Café Cappuccino</h3>
+                        <span class="product__price">$1.500</span>
+                    </div>
+                </article>
+                <!-- Producto 6 -->
+                <article class="product">
+                    <div class="product__img-wrapper">
+                        <img src="assets/img/cafe2.jpg" alt="Café Latte" class="product__img">
+                        <button class="product__btn-add"><i class="fas fa-plus"></i></button>
+                    </div>
+                    <div class="product__content">
+                        <h3 class="product__title">Café Latte</h3>
+                        <span class="product__price">$1.600</span>
+                    </div>
+
+
+            </div>
+            <div class="text-center" style="margin-top: 3rem;">
+                <a href="#" class="btn btn--outline">Ver Todo el Menú</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Nosotros y Contacto -->
+    <section class="about section" id="about">
+        <div class="container grid about__grid">
+            <!-- Formulario de Contacto (Izquierda) -->
+            <div class="contact" id="reservation" style="height: fit-content; margin: 0;">
+                <h3 class="section-title"
+                    style="font-size: var(--h3-font-size); margin-bottom: 0.5rem; text-align: left;">Reserva o Cotiza
+                    online.
+                </h3>
+                <p style="margin-bottom: 1.5rem; font-size: 0.9rem; color: var(--text-color-light);">
+                    ¿Prefieres llamar? <strong style="color: var(--first-color);"><i class="fas fa-phone"></i> +56 32
+                        123 4567</strong>
+                </p>
+                <form action="" class="contact__form" id="contact-form">
+                    <div class="form__group">
+                        <label for="name" class="form__label">Nombre</label>
+                        <input type="text" id="name" class="form__input" placeholder="Tu nombre" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="email" class="form__label">Email</label>
+                        <input type="email" id="email" class="form__input" placeholder="tu@email.com" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="subject" class="form__label">Asunto</label>
+                        <input type="text" id="subject" class="form__input" placeholder="Asunto" required>
+                    </div>
+                    <div class="form__group">
+                        <label for="message" class="form__label">Mensaje</label>
+                        <textarea id="message" class="form__input form__input--textarea"
+                            placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn btn--primary" style="width: 100%;">Enviar Mensaje</button>
+                    </div>
+                </form>
+            </div>
+
+            <!-- Contenido Nosotros (Derecha) -->
+            <div class="about__content">
+                <div class="about__data">
+                    <span class="section-subtitle" style="text-align: left;">Nuestra Historia</span>
+                    <h2 class="section-title" style="text-align: left;">De Panadería a Cafetería</h2><br>
+                    <p class="about__description">
+                        Durante décadas fuimos "la panadería del barrio" en Viña del Mar. Hoy, cumplimos un sueño:
+                        transformar nuestro espacio para que no solo lleves el pan, sino que te quedes a disfrutarlo.
+                        Mantenemos nuestra esencia artesanal de siempre, pero ahora te invitamos a vivir la experiencia
+                        completa con una taza de café en mano.
+                    </p>
+                    <div class="about__stats">
+                        <div class="stat">
+                            <span class="stat__number">15+</span>
+                            <span class="stat__title">Años de <br> Experiencia</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat__number">200+</span>
+                            <span class="stat__title">Productos <br> Diarios</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about__img-wrapper" style="margin-top: 2rem;">
+                    <img src="assets/img/mapa.jpg" alt="Ubicación Av. Libertad 123" class="about__img"
+                        style="height: 300px; object-fit: cover; border-radius: 8px; width: 100%;">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pie de Página -->
+    <footer class="footer" id="footer">
+        <div class="container grid footer__grid">
+            <div class="footer__content">
+                <br> <br>
+                <a href="#" class="footer__logo">Delicias de Viña</a>
+                <p class="footer__description">Tu panadería de siempre, ahora tu cafetería favorita.</p>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Contacto</h3>
+                <ul class="footer__links">
+                    <li><i class="fas fa-map-marker-alt"></i>Libertad 123, Viña del Mar.</li>
+                    <li><i class="fas fa-phone"></i> +56 32 123 4567</li>
+                    <li><i class="fas fa-envelope"></i> contacto@deliciasvina.cl</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Horario</h3>
+                <ul class="footer__links">
+                    <li>Lun - Vie: 7:00 - 20:00</li>
+                    <li>Sáb - Dom: 8:00 - 19:00</li>
+                </ul>
+            </div>
+
+            <div class="footer__content">
+                <h3 class="footer__title">Síguenos</h3>
+                <div class="social">
+                    <a href="#" class="social__link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social__link"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copy text-center">
+            <p>&copy; 2024 Delicias de Viña. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- Modal de Confirmación -->
+    <div class="modal" id="success-modal">
+        <div class="modal__content">
+            <i class="fas fa-check-circle modal__icon"></i>
+            <h3 class="modal__title">¡Mensaje Enviado!</h3>
+            <p class="modal__description">Gracias por contactarnos. Te responderemos a la brevedad.</p>
+            <button class="btn btn--primary modal__close" id="modal-close">Cerrar</button>
+        </div>
+    </div>
+
+    <script src="assets/js/script.js"></script>
 </body>
 
 </html>
